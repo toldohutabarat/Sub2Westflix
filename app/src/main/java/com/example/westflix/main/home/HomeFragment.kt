@@ -29,17 +29,17 @@ class HomeFragment : Fragment() {
             if (tvShow != null) {
                 when (tvShow) {
                     is Resource.Loading -> {
-                        binding?.tvErrorHome.visibility = View.GONE
-                        binding?.progressBar.visibility = View.VISIBLE
+                        binding?.tvErrorHome?.visibility = View.GONE
+                        binding?.progressBar?.visibility = View.VISIBLE
                     }
                     is Resource.Success -> {
-                        binding?.tvErrorHome.visibility = View.GONE
-                        binding?.progressBar.visibility = View.GONE
+                        binding?.tvErrorHome?.visibility = View.GONE
+                        binding?.progressBar?.visibility = View.GONE
                         showAdapterTV.setData(tvShow.data)
                     }
                     is Resource.Error -> {
-                        binding?.progressBar.visibility = View.GONE
-                        binding?.tvErrorHome.visibility = View.VISIBLE
+                        binding?.progressBar?.visibility = View.GONE
+                        binding?.tvErrorHome?.visibility = View.VISIBLE
                     }
                 }
             }
@@ -73,7 +73,7 @@ class HomeFragment : Fragment() {
             }
         }
 
-        with(binding.moviePopularRvHome) {
+        with(binding?.moviePopularRvHome) {
             this?.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
             this?.setHasFixedSize(true)
             this?.adapter = adapterMovie
@@ -84,9 +84,9 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
-        return binding.root
+        return binding?.root
     }
 
     override fun onDestroyView() {

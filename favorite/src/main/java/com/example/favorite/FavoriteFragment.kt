@@ -30,10 +30,10 @@ class FavoriteFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         _binding = FragmentFavoriteBinding.inflate(inflater, container, false)
         loadKoinModules(favoriteModule)
-        return binding.root
+        return binding?.root
     }
 
     private fun loadMovie() {

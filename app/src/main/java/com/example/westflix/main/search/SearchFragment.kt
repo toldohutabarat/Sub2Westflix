@@ -36,15 +36,16 @@ class SearchFragment : Fragment(), AdapterView.OnItemSelectedListener {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         _binding = FragmentSearchBinding.inflate(inflater, container, false)
-        return binding.root
+        return binding?.root
     }
 
     override fun onNothingSelected(p0: AdapterView<*>?) {}
 
     override fun onDestroyView() {
         super.onDestroyView()
+        binding?.rvSearch?.adapter = null
         _binding = null
     }
 
@@ -73,9 +74,9 @@ class SearchFragment : Fragment(), AdapterView.OnItemSelectedListener {
             binding?.etQuery?.setOnKeyListener { _, keyCode, _ ->
                 if (keyCode == KeyEvent.KEYCODE_ENTER) {
                     if (option == "Movie") {
-                        movieSearch(binding.etQuery.text.toString())
+                        movieSearch(binding?.etQuery?.text.toString())
                     } else {
-                        tvShowSearch(binding.etQuery.text.toString())
+                        tvShowSearch(binding?.etQuery?.text.toString())
                     }
                     return@setOnKeyListener true
                 }
@@ -108,7 +109,7 @@ class SearchFragment : Fragment(), AdapterView.OnItemSelectedListener {
 
         }
 
-        with(binding.rvSearch) {
+        with(binding?.rvSearch) {
             this?.layoutManager = LinearLayoutManager(context)
             this?.setHasFixedSize(true)
             this?.adapter = tvShowAdapterSearch
@@ -123,8 +124,8 @@ class SearchFragment : Fragment(), AdapterView.OnItemSelectedListener {
             android.R.layout.simple_spinner_item
         )
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        binding.optionSearch.adapter = adapter
-        binding.optionSearch.onItemSelectedListener = this
+        binding?.optionSearch?.adapter = adapter
+        binding?.optionSearch?.onItemSelectedListener = this
     }
 
     private fun movieSearch(q: String) {

@@ -78,8 +78,8 @@ public *;
 *** rewind();
 }
 
--keep public class com.roviery.core.data.source.remote.* {*;}
--keep public class com.roviery.core.data.source.repository.* {*;}
+-keep public class com.example.core.data.source.remote.* {*;}
+-keep public class com.example.core.data.source.repository.* {*;}
 
 # Uncomment for DexGuard only
 #-keepresourcexmlelements manifest/application/meta-data@value=GlideModule
