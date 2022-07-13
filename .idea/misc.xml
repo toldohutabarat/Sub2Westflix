@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix(submission2)/app/src/main/res/drawable-v24/ic_baseline_loading_24.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix(submission2)/app/src/main/res/layout/activity_detail_film.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix(submission2)/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix(submission2)/app/src/main/res/layout/fragment_search.xml" value="0.16983695652173914" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix(submission2)/core/src/main/res/layout/item_list.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix(submission2)/core/src/main/res/layout/search_list.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix(submission2)/favorite/src/main/res/layout/fragment_favorite.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/app/src/main/res/drawable-v24/backdrop_light.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/app/src/main/res/drawable-v24/ic_baseline_favorite_solid_24.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/app/src/main/res/drawable-v24/ic_baseline_loading_24.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/app/src/main/res/drawable-v24/ic_close.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/app/src/main/res/drawable-v24/ic_favorite_border.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/app/src/main/res/drawable-v24/ic_favorite_solid.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/app/src/main/res/drawable-v24/ic_home.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/app/src/main/res/drawable-v24/ic_search.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/app/src/main/res/drawable-v24/loading.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/app/src/main/res/layout/activity_detail.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/app/src/main/res/layout/activity_detail_film.xml" value="0.16983695652173914" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/app/src/main/res/layout/fragment_home.xml" value="0.16" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/app/src/main/res/layout/fragment_search.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/core/src/main/res/layout/fragment_tes.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/core/src/main/res/layout/item_list.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/core/src/main/res/layout/search_list.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Westflix/favorite/src/main/res/layout/fragment_favorite.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Westflix</string>
+
+    <!--  Bottom Navigation  -->
+    <string name="tabFavorite">Favorite</string>
+    <string name="tabHome">Westflix</string>
+    <string name="tabSearch">Search</string>
+
+    <!--  Text View  -->
+    <string name="date_release">Release Year</string>
+    <string name="favorite_popular_movie">Favorite Popular Movie</string>
+    <string name="example_rating">8.5</string>
+    <string name="example_release_date">2021–1–1</string>
+    <string name="favorite_search_tv_show">Favorite Search Tv Show</string>
+    <string name="popular_movie">Popular Movie</string>
+    <string name="description">Follows the personal and professional lives of a group of doctors at Seattles Grey Sloan Memorial Hospital</string>
+    <string name="rating_film_or_movie">Rating</string>
+    <string name="favorite_popular_tv_show">Favorite Popular Tv Show</string>
+    <string name="title_movie_or_tv">Title</string>
+    <string name="error_message">ERROR</string>
+    <string name="show_popular_tv">Popular Tv Show</string>
+    <string name="favorite_search_movie">Favorite Search Movie</string>
+
+    <string-array name="option">
+        <item>Movie</item>
+        <item>Tv Show</item>
+    </string-array>
+
+
+    <!--  Content Description  -->
+    <string name="button_favorite">Favorite Button</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="backdrop">Backdrop</string>
+    <string name="film_or_movie_poster">Poster</string>
+    <string name="button_close">Close Button</string>
+
+
+</resources>
