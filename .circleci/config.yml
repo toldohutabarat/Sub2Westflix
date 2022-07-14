@@ -15,7 +15,7 @@ jobs:
           command: touch local.properties
       - run:
           name: Add API KEY
-          command: echo "API_KEY=\"6371f15a88c746f9f829761c2dbffe7e\"" >> local.properties
+          command: echo "API_KEY=\"a448ce8b16d60af78d4ae2e28cfb94a2\"" >> local.properties
       - run:
           name: Chmod permissions
           command: sudo chmod +x ./gradlew
