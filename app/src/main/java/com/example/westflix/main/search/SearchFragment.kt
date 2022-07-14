@@ -36,16 +36,16 @@ class SearchFragment : Fragment(), AdapterView.OnItemSelectedListener {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         _binding = FragmentSearchBinding.inflate(inflater, container, false)
-        return binding.root
+        return binding?.root
     }
 
     override fun onNothingSelected(p0: AdapterView<*>?) {}
 
     override fun onDestroyView() {
         super.onDestroyView()
-        binding.rvSearch.adapter = null
+        binding?.rvSearch?.adapter = null
         _binding = null
     }
 
@@ -71,12 +71,12 @@ class SearchFragment : Fragment(), AdapterView.OnItemSelectedListener {
                 startActivity(intent)
             }
 
-            binding.etQuery.setOnKeyListener { _, keyCode, _ ->
+            binding?.etQuery?.setOnKeyListener { _, keyCode, _ ->
                 if (keyCode == KeyEvent.KEYCODE_ENTER) {
                     if (option == "Movie") {
-                        movieSearch(binding.etQuery.text.toString())
+                        movieSearch(binding?.etQuery?.text.toString())
                     } else {
-                        tvShowSearch(binding.etQuery.text.toString())
+                        tvShowSearch(binding?.etQuery?.text.toString())
                     }
                     return@setOnKeyListener true
                 }
@@ -92,27 +92,27 @@ class SearchFragment : Fragment(), AdapterView.OnItemSelectedListener {
             if (tvShow != null) {
                 when (tvShow) {
                     is Resource.Loading -> {
-                        binding.tvErrorSearch.visibility = View.GONE
-                        binding.progressBarSearch.visibility = View.VISIBLE
+                        binding?.tvErrorSearch?.visibility = View.GONE
+                        binding?.progressBarSearch?.visibility = View.VISIBLE
                     }
                     is Resource.Success -> {
-                        binding.tvErrorSearch.visibility = View.GONE
-                        binding.progressBarSearch.visibility = View.GONE
+                        binding?.tvErrorSearch?.visibility = View.GONE
+                        binding?.progressBarSearch?.visibility = View.GONE
                         tvShowAdapterSearch.setData(tvShow.data)
                     }
                     is Resource.Error -> {
-                        binding.progressBarSearch.visibility = View.GONE
-                        binding.tvErrorSearch.visibility = View.VISIBLE
+                        binding?.progressBarSearch?.visibility = View.GONE
+                        binding?.tvErrorSearch?.visibility = View.VISIBLE
                     }
                 }
             }
 
         }
 
-        with(binding.rvSearch) {
-            this.layoutManager = LinearLayoutManager(context)
-            this.setHasFixedSize(true)
-            this.adapter = tvShowAdapterSearch
+        with(binding?.rvSearch) {
+            this?.layoutManager = LinearLayoutManager(context)
+            this?.setHasFixedSize(true)
+            this?.adapter = tvShowAdapterSearch
         }
 
     }
@@ -124,8 +124,8 @@ class SearchFragment : Fragment(), AdapterView.OnItemSelectedListener {
             android.R.layout.simple_spinner_item
         )
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        binding.optionSearch.adapter = adapter
-        binding.optionSearch.onItemSelectedListener = this
+        binding?.optionSearch?.adapter = adapter
+        binding?.optionSearch?.onItemSelectedListener = this
     }
 
     private fun movieSearch(q: String) {
@@ -134,27 +134,27 @@ class SearchFragment : Fragment(), AdapterView.OnItemSelectedListener {
             if (movie != null) {
                 when (movie) {
                     is Resource.Loading -> {
-                        binding.tvErrorSearch.visibility = View.GONE
-                        binding.progressBarSearch.visibility = View.VISIBLE
+                        binding?.tvErrorSearch?.visibility = View.GONE
+                        binding?.progressBarSearch?.visibility = View.VISIBLE
                     }
                     is Resource.Success -> {
-                        binding.tvErrorSearch.visibility = View.GONE
-                        binding.progressBarSearch.visibility = View.GONE
+                        binding?.tvErrorSearch?.visibility = View.GONE
+                        binding?.progressBarSearch?.visibility = View.GONE
                         movieAdapterSearch.dataSet(movie.data)
                     }
                     is Resource.Error -> {
-                        binding.progressBarSearch.visibility = View.GONE
-                        binding.tvErrorSearch.visibility = View.VISIBLE
+                        binding?.progressBarSearch?.visibility = View.GONE
+                        binding?.tvErrorSearch?.visibility = View.VISIBLE
                     }
                 }
             }
 
         }
 
-        with(binding.rvSearch) {
-            this.layoutManager = LinearLayoutManager(context)
-            this.setHasFixedSize(true)
-            this.adapter = movieAdapterSearch
+        with(binding?.rvSearch) {
+            this?.layoutManager = LinearLayoutManager(context)
+            this?.setHasFixedSize(true)
+            this?.adapter = movieAdapterSearch
         }
     }
 }

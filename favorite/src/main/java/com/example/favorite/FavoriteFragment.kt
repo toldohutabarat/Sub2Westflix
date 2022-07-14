@@ -30,10 +30,10 @@ class FavoriteFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         _binding = FragmentFavoriteBinding.inflate(inflater, container, false)
         loadKoinModules(favoriteModule)
-        return binding.root
+        return binding?.root
     }
 
     private fun loadMovie() {
@@ -45,25 +45,25 @@ class FavoriteFragment : Fragment() {
             movieAdapter.dataSet(movie)
         }
 
-        with(binding.favoriteRvFavoriteSearchMovie) {
-            this.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
-            this.setHasFixedSize(true)
-            this.adapter = searchMovieAdapter
+        with(binding?.favoriteRvFavoriteSearchMovie) {
+            this?.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
+            this?.setHasFixedSize(true)
+            this?.adapter = searchMovieAdapter
         }
 
-        with(binding.favoriteRvFavoriteMovie) {
-            this.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
-            this.setHasFixedSize(true)
-            this.adapter = movieAdapter
+        with(binding?.favoriteRvFavoriteMovie) {
+            this?.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
+            this?.setHasFixedSize(true)
+            this?.adapter = movieAdapter
         }
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-        binding.favoriteRvFavoriteMovie.adapter = null
-        binding.favoriteRvFavoriteTvshow.adapter = null
-        binding.favoriteRvFavoriteSearchMovie.adapter = null
-        binding.favoriteRvFavoriteSearchTvShow.adapter = null
+        binding?.favoriteRvFavoriteMovie?.adapter = null
+        binding?.favoriteRvFavoriteTvshow?.adapter = null
+        binding?.favoriteRvFavoriteSearchMovie?.adapter = null
+        binding?.favoriteRvFavoriteSearchTvShow?.adapter = null
         _binding = null
     }
 
@@ -76,16 +76,16 @@ class FavoriteFragment : Fragment() {
             tvShowAdapter.setData(tvShow)
         }
 
-        with(binding.favoriteRvFavoriteSearchTvShow) {
-            this.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
-            this.setHasFixedSize(true)
-            this.adapter = searchTvShowAdapter
+        with(binding?.favoriteRvFavoriteSearchTvShow) {
+            this?.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
+            this?.setHasFixedSize(true)
+            this?.adapter = searchTvShowAdapter
         }
 
-        with(binding.favoriteRvFavoriteTvshow) {
-            this.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
-            this.setHasFixedSize(true)
-            this.adapter = tvShowAdapter
+        with(binding?.favoriteRvFavoriteTvshow) {
+            this?.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
+            this?.setHasFixedSize(true)
+            this?.adapter = tvShowAdapter
         }
     }
 
