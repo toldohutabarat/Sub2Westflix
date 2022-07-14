@@ -22,6 +22,7 @@ class DetailFilmActivity : AppCompatActivity() {
         const val EXTRA_TVSHOW = "extra_tvshow"
     }
 
+
     private val detailViewModel: DetailFilmViewModel by viewModel()
 
     private lateinit var binding: ActivityDetailFilmBinding
